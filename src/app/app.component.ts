@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-starter-file';
+  sidebarExpanded: boolean = false;
+
+  constructor() {
+
+  }
+
+  toggleSidebarExpansion(event: boolean) {
+    this.sidebarExpanded = !this.sidebarExpanded;
+  }
 }

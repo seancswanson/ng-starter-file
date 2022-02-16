@@ -4,29 +4,10 @@
 
   grid-template-columns: 1fr;
   grid-template-rows: 56px 1fr;
-}
 
-.header-container {
-  border-bottom: 1px solid gray;
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 10px;
-  }
+  @media (max-width: 500px) {
+      grid-template-rows: 150px 1fr;
 
-  .profile-icon {
-    max-width: 25px;
   }
 }
 
-.container {
-  display: flex;
-
-  .sidebar {
-    border-right: 1px solid gray;
-    width: 60px;
-    flex: 1;
-  }
-}

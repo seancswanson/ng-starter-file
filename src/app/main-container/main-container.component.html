@@ -1,0 +1,47 @@
+<div class="container" [ngClass]="{ 'sidebar-expanded': sidebarExpanded }">
+  <aside class="sidebar">
+    <ul class="nav-link-list">
+      <li class="nav-link-item">
+        <a
+          routerLink="/home"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><div class="nav-link-icon" id="home"></div>
+          <div class="nav-link-text">Home</div>
+        </a>
+      </li>
+      <li class="nav-link-item">
+        <a routerLink="/page1" routerLinkActive="active"
+          ><div class="nav-link-icon" id="page"></div>
+          <div class="nav-link-text">Products</div></a
+        >
+      </li>
+      <li class="nav-link-item">
+        <a routerLink="/page2" routerLinkActive="active"
+          ><div class="nav-link-icon" id="page"></div>
+          <div class="nav-link-text">About Us</div></a
+        >
+      </li>
+      <li class="nav-link-item">
+        <a routerLink="/page3" routerLinkActive="active"
+          ><div class="nav-link-icon" id="page"></div>
+          <div class="nav-link-text">Contact Us</div></a
+        >
+      </li>
+    </ul>
+    <ul class="nav-link-list">
+      <li class="nav-link-item">
+        <a
+          routerLink="/app-info"
+          routerLinkActive="active"
+          ><div class="nav-link-icon" id="info"></div>
+          <div class="nav-link-text">App Info</div>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
